@@ -1,0 +1,36 @@
+# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
+# DOTA 1.5 dataset https://captain-whu.github.io/DOTA/index.html for object detection in aerial images by Wuhan University
+# Documentation: https://docs.ultralytics.com/datasets/obb/dota-v2/
+# Example usage: yolo train model=yolov8n-obb.pt data=DOTAv1.5.yaml
+# parent
+# ├── ultralytics
+# └── datasets
+#     └── dota1.5 ← downloads here (2GB)
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: ../MAR20 # dataset root dir
+train: images/train # train images (relative to 'path') 1411 images
+val: images/val # val images (relative to 'path') 458 images
+
+names:
+  0: SU-35
+  1: C-130
+  2: C-17
+  3: C-5
+  4: F-16
+  5: TU-160
+  6: E-3
+  7: B-52
+  8: P-3C
+  9: B-1B
+  10: E-8
+  11: TU-22
+  12: F-15
+  13: KC-135
+  14: F-22
+  15: FA-18
+  16: TU-95
+  17: KC-10
+  18: SU-34
+  19: SU-24
